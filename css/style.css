@@ -1,10 +1,23 @@
 /* CUSTOM FONTS */
+@font-face {
+  font-family: 'Bahnschrift2';
+  src: url("../font/BAHNSCHRIFT.TTF");
+}
 
-/* GENERAL STYLE */
+/* CUSTOM COLORS 
+#0C0E16
+#1F304E
+#595959
+#7992B1
+*/
+
+/* 1.GENERAL STYLE */
 html {
-    box-sizing: border-box;
-    font-size: 18px;
-    color: #f0f0f0;
+  box-sizing: border-box;
+  font-family: Bahnschrift, Bahnschrift2 , sans-serif;
+  font-size: 18px;
+  color: white;
+  text-align: center;
 }
 
 *,
@@ -14,33 +27,40 @@ html {
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
+  
 } 
 
+h2 {
+  font-size: 2.5rem;
+}
 
-/* HEADER */
+/* 2.HEADER */
+
+header {
+  
+}
 nav {
     position: fixed;
     z-index: 1;
     top: 0%;
     width: 100%;
     height: 4rem;
-    background-color: black;
-    border-bottom: 1px solid #f0f0f0;
+    background-color: #0C0E16;
+    border-bottom: 1px solid #7992B1;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 
 nav a {
-    color: #f0f0f0;
+    color: white;
     text-decoration: none;
     font-weight: 600;
   }
 
 nav a:hover {
-  color: darkgrey;
+  color: #7992B1;
 }
 
 ul {
@@ -53,24 +73,23 @@ li {
 }
 
 svg {
-  fill: #f0f0f0;
+  fill: white;
   width: 1.5rem;
   height: auto;
   margin: 0.5rem;
 }
 
 svg:hover {
-  fill: darkgray;
+  fill: #7992B1;
 }
 
 .clear {
   height: 4rem;
-  background-color: black;
+  background-color: #0C0E16;
 }
 
 .clear-nobg {
   height: 4rem;
-  
 }
 
 .clear-white {
@@ -78,82 +97,100 @@ svg:hover {
   background-color: white;
 }
 
-.logo {
-  /*background-color: black;*/
-  background-image: url("../img/bg_dark_TRUE_2560px.jpg");
-  background-size: cover;
+.clear-blue {
+  height: 4rem;
+  background-color: #1F304E;
 }
 
-.logo img {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  max-width: 100%;
+.logo {
+  background-color: #0C0E16;
+}
+
+figure {
+  margin: 0%;
+  background-image: url("../img/bg_dark_TRUE_2560px.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+figure img {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  max-width: 50%;
   height: auto;
 }
 
-/* MAIN */
-
 /* VIDEO */
-#video {
-  /*background-color: black;*/
+.youtube {
+  background-color: #0C0E16;
+  min-width: 200px;
+  min-height: 200px;
 }
+
+iframe {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* 3.MAIN */
 
 /* BIO */
 #bio {
   background-color: white;
-  color: black;
+  color: #0C0E16;
 }
 
 #bio article {
-  width: 80%;
+  width: 50%;
   margin: auto;
 }
 
 .band-img img{
   max-width: 100%;
-  height: auto;
+  margin: 0;
 }
 
 #bio p {
-  width: 80%;
-  margin: auto;
-  padding: 1rem;
   text-align: justify;
 }
 
 /* MUSIC */
 #music {
-  background-color: black;
+  background-color: #0C0E16;
+  /*background-color: #1F304E;*/
+}
+
+.bandcamp {
+  
 }
 
 
 /* TOUR */
 #tour {
   background-color: white;
-  color: black;
+  color: #0C0E16;
 }
 
 .songkick {
-  width: 80%;
+  width: 50%;
   margin: auto;
-  
   padding-bottom: 1rem;
 }
 
 
-/* FOOTER */
+/* 4.FOOTER */
 
 footer {
-  /*background-color: black;*/
   background-image: url("../img/bg_dark_TRUE_2560px.jpg");
   background-size: cover;
 }
 
 .credits a {
   text-decoration: none;
-  color: #f0f0f0;
+  color: white;
 }
 
 .credits a:hover {
-  color: darkgrey;
+  color: #595959;
 }
