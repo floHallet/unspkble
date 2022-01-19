@@ -1,3 +1,17 @@
+/* FUNCTION TO FADE BETWEEN 2 IMAGES
+visite https://www.simonbattersby.com/blog/simple-jquery-image-crossfade/
+-----------------------------------------------------------------------*/
+function cycleImages(){
+  var $active = $('#cycler .active');
+  var $next = ($active.next().length > 0) ? $active.next() : $('#cycler img:first');
+  $next.css('z-index',2);//move the next image up the pile
+  $active.fadeOut(800,function(){//fade out the top image
+    $active.css('z-index',1).show().removeClass('active');//reset the z-index and unhide the image
+    $next.css('z-index',3).addClass('active');//make the next image the top one
+  });
+}
+
+// START JQUERY CODE AFTER PAGE IS LOADED
 $(document).ready(function() {
 /* SMOOTH SCROLLING WITH JQUERY 
 visit https://css-tricks.com/snippets/jquery/smooth-scrolling/
@@ -15,3 +29,6 @@ $('a[href*="#"]').click(function(event) {
     });
   });
 });
+
+// CHANGE ABOUT SECTION IMAGE EVERY 5S
+setInterval('cycleImages()', 5000);
