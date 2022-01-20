@@ -200,7 +200,7 @@ visit: https://www.benmarshall.me/responsive-iframes/
   fill: #7992B1;
 }
 .arrow svg:hover {
-  fill: #1F304E;
+  /*fill: #1F304E;*/
   animation:rotate-in-center .6s cubic-bezier(.25,.46,.45,.94) both;
 }
 /* ----------------------------------------------
@@ -222,10 +222,11 @@ visit: https://www.benmarshall.me/responsive-iframes/
 }
 .menu svg {
   width: 2.5rem;
-  fill: #7992B1;
+  fill: #7992B1
 }
 .menu svg:hover {
-  fill: white;
+  animation:rotate-in-center .6s cubic-bezier(.25,.46,.45,.94) both;
+
 }
 
 /* ABOUT */
