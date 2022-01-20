@@ -11,16 +11,6 @@ function cycleImages(){
   });
 }
 
-function topPos(){
-  const pos = $(document).scrollTop();
-  if (pos <= 250) {
-    //$('.arrow').css('display', 'none');
-    $('.arrow').hide();
-  } else {
-    $('.arrow').show();
-  }
-}
-
 // START JQUERY CODE AFTER PAGE IS LOADED
 $(document).ready(function() {
 /* SMOOTH SCROLLING WITH JQUERY 
@@ -40,12 +30,23 @@ $('a[href*="#"]').click(function(event) {
   });
 
 //check if user scroll
-/*$(document).scroll(function(){
-  $('.arrow').css('display', 'block'); // show arrow at the bottom of sreen
-  //$(document).off('scroll'); //turn off the event listener
-});*/
+$(document).scroll(function(){
+  const pos = $(document).scrollTop();
+  if (pos <= 250) {
+    $('.arrow').slideUp(500);
+    $('.menu').slideUp(500);
+    $('nav').slideDown(500);
+  } else {
+    $('.arrow').show();
+    $('.menu').show();
+    $('nav').slideUp(500);
+  }
+});
 
-setInterval('topPos()', 2000);
+$('.menu').click(function(){
+  $('nav').slideDown(500);
+  $('.menu').slideUp(500);
+});
 
 
 // CHANGE ABOUT SECTION IMAGE EVERY 5S
