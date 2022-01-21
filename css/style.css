@@ -189,15 +189,15 @@ visit: https://www.benmarshall.me/responsive-iframes/
 /* GO TO TOP ARROW*/
 .arrow {
   display: none;
-  float: right;
   position: fixed;
-  bottom: 0.25rem;
-  right: 0.25rem;
+  bottom: 2rem;
+  right: 2rem;
   z-index: 10;
+  background-color: black;
 }
 .arrow svg {
-  width: 2rem;
-  fill: #7992B1;
+  width: 1.5rem;
+  fill: white;
 }
 .arrow svg:hover {
   /*fill: #1F304E;*/
@@ -214,19 +214,19 @@ visit: https://www.benmarshall.me/responsive-iframes/
 
 .menu {
   display: none;
-  float: right;
   position: fixed;
-  top: 0.25rem;
-  right: 0.25rem;
   z-index: 10;
+  cursor: pointer;
+  top: 2rem;
+  right: 2rem;
+  background-color: black;
 }
 .menu svg {
-  width: 2.5rem;
-  fill: #7992B1
+  width: 2rem;
+  fill: white;
 }
 .menu svg:hover {
   animation:rotate-in-center .6s cubic-bezier(.25,.46,.45,.94) both;
-
 }
 
 /* ABOUT */

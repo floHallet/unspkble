@@ -1,4 +1,4 @@
-/* FUNCTION TO FADE BETWEEN 2 IMAGES
+/* FUNCTION TO CROSSFADE BETWEEN IMAGES
 visite https://www.simonbattersby.com/blog/simple-jquery-image-crossfade/
 -----------------------------------------------------------------------*/
 function cycleImages(){
@@ -29,13 +29,15 @@ $('a[href*="#"]').click(function(event) {
     });
   });
 
-//check if user scroll
+/* check if user scroll
+------------------------------------*/
 $(document).scroll(function(){
+  // get position of the page
   const pos = $(document).scrollTop();
-  if (pos <= 250) {
-    $('.arrow').slideUp(500);
-    $('.menu').slideUp(500);
+  if (pos <= 320) {
     $('nav').slideDown(500);
+    $('.menu').slideUp(250);
+    $('.arrow').slideUp(500);
   } else {
     $('.arrow').show();
     $('.menu').show();
@@ -43,15 +45,16 @@ $(document).scroll(function(){
   }
 });
 
+/* show nav-bar if icon-menu is clicked
+-------------------------------------*/
 $('.menu').click(function(){
   $('nav').slideDown(500);
-  $('.menu').slideUp(500);
+  $('.menu').slideUp(250);
 });
 
-
-// CHANGE ABOUT SECTION IMAGE EVERY 5S
+/* Change about section image every 5s
+-------------------------------------*/
 setInterval('cycleImages()', 5000);
-
 });
 
 
