@@ -119,10 +119,10 @@ svg:hover {
 @media only screen and (max-width: 768px), (max-height: 768px) {
   .logo {
     height: auto;
-    padding-bottom: 4rem;
+    padding-bottom: 5rem;
   }
   .logo figure {
-    padding-top: 4rem;
+    padding-top: 5rem;
   }
 }
 
@@ -145,7 +145,7 @@ svg:hover {
   bottom: 1rem;
   right: 1rem;
   z-index: 10;
-  background-color: #32465F;
+  background-color: hsla(213, 31%, 28%, 0.9);
 }
 .arrow svg {
   width: 1.25rem;
@@ -164,7 +164,7 @@ svg:hover {
   cursor: pointer;
   top: 2rem;
   right: 2rem;
-  background-color: #32465F;
+  background-color: hsla(213, 31%, 28%, 0.9);
 }
 .menu svg {
   width: 2rem;
@@ -180,12 +180,13 @@ svg:hover {
 visit: https://www.benmarshall.me/responsive-iframes/
 --------------------------------*/
 #video {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .container {
   width: 50%;
+  max-width: 1024px;
   margin: auto;
   margin-bottom: 0.5rem;
 }
@@ -208,6 +209,7 @@ visit: https://www.benmarshall.me/responsive-iframes/
 .video-button {
   display: inline-block;
   width: 50%;
+  max-width: 1024px;
   color: #FFFFFF;
   padding: 1rem 1rem;
   background-color: #32465F;
@@ -234,6 +236,7 @@ visit: https://www.benmarshall.me/responsive-iframes/
 
 #bio article {
   width: 50%;
+  max-width: 1024px;
   margin: auto;
   padding-bottom: 5rem;
 }
@@ -260,7 +263,7 @@ visit: https://www.benmarshall.me/responsive-iframes/
 
 p.justify {
   text-align: justify;
-  margin: 2rem 1rem 1rem 1rem;
+  margin: 2rem 2.5rem 1.5rem 2.5rem;
 }
 
 p.center {
@@ -348,6 +351,7 @@ visit: https://www.benmarshall.me/responsive-iframes/
 
 .songkick {
   width: 50%;
+  max-width: 1024px;
   margin: auto;
   padding-bottom: 4.5rem;
   border-top: 1px solid #192332;
@@ -365,7 +369,7 @@ footer {
 }
 
 .contact {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .contact a {
@@ -387,7 +391,7 @@ footer {
   width: 190px ;
   color: #FFFFFF;
   padding: 1rem 1rem;
-  margin: 0.5rem 0.5rem 0 0.5rem;
+  margin: 0.5rem 0.25rem 0 0.25rem;
   background-color: #32465F;
   text-decoration: none;
   letter-spacing: 2px;
