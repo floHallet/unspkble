@@ -5,7 +5,7 @@
   <title>Unspkble</title>
   <meta name="description" content="Unspkble official website">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- RESEAUX SOCIAUX A REMPLIR! -->
+  <!-- RESEAUX SOCIAUX A REMPLIR -->
   <meta property="og:title" content="">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
@@ -14,10 +14,7 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-  <!-- CSS FILES AND GOOGLE FONTS-->
-  <link rel="preconnect" href="https://fonts.googleapis.com"> 
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!-- CSS FILES -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css"> 
   <link rel="stylesheet" href="css/style.css">
@@ -50,12 +47,19 @@
     </nav>
     <!-- LOGO -->
     <section class="logo">
-      <div class="clear"></div>
       <figure>
-        <img class="slide-in-top" src="img/unspkble_logo3_1920px.png" alt="Logo">        
+        <img class="slide-in-top" src="img/logo_website_1024.png" alt="Logo">        
       </figure>
     </section>
   </header>
+  <!-- MENU ICON -->
+  <div class="menu rotate-in-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+  </svg></div>
+  <!-- ARROW ICON (GO TO TOP) -->
+  <a class="arrow rotate-in-center" href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+  </svg></a>
   <!-- MAIN -->
   <main>
     <!-- VIDEO -->
@@ -66,32 +70,33 @@
           <iframe width="560" height="315" src="https://www.youtube.com/embed/rsJChoJVDns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>
       </div>
+      <a class="video-button" target="_blank" href="https://www.youtube.com/watch?v=fL4zeZ-z04Q&list=PLF8-dqxAQQCHtBPsrZ4RmtnHrBNwY120j">STREAM 'LIVE AT THE BLACK SHEEP'</a>
+      <!-- VIDEO TITLE HIDDEN -->
       <h3>Live at The Black Sheep</h3>
-      <div class="menu rotate-in-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-      </svg></div>
-      <a class="arrow rotate-in-center" href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-      </svg></a>
     </section>
     <!-- ABOUT -->
     <section id="bio">
-      <div class="clear-white"></div>
       <h2>ABOUT</h2>
       <article>
+        <!-- DIAPORAMA -->
         <figure id="cycler">
           <img class="active" src="img/unspk.jpg" alt="">
           <img src="img/diapo01.jpg" alt="">
           <img src="img/diapo02.jpg" alt="">
           <img src="img/diapo04.jpg" alt="">
           <img src="img/diapo05.jpg" alt="">
+          <!-- ADD IMAGES HERE IF NEEDED -->
         </figure>
-        <p>UNSPKBLE is a rock quartet from southern France that delivers radical and melodic post-punk tunes, which drift towards New wave, Cold wave, and sometimes even Noise rock. According to reviews of their debut EP "Friction" (June 2020, Rejuvenation Records/Kerviniou Recordz), Unspkble's music evokes the soundscapes of Killing Joke, The Sound, Christian Death, Play Dead, Siouxsie & The Banshees, Bauhaus, but also more recent formations like Shame, Soft Kill or Whispering Sons.</p>
+        <p class="justify">UNSPKBLE is a rock band from southern France who delivers radical and melodic post-punk tunes, drifting towards New wave, Cold wave, and sometimes even Noise rock. 
+          According to reviews of their debut EP "FRICTION" (June 2020, Rejuvenation Records/Kerviniou Recordz), UNSPKBLE's music evokes the soundscapes of KILLING JOKE, THE SOUND, CHRISTIAN DEATH, PLAY DEAD, SIOUXSIE & THE BANSHEES, BAUHAUS, but also more recent formations like SHAME, SOFT KILL or WHISPERING SONS.</p>
+        <p class="center">Dion LAX - Vocals<br>
+          Greg REJU - Bass/Vocals<br>
+          Gom PILOTE - Guitars<br>
+          Seb DODUS - Drums</p>
       </article>   
     </section>
     <!-- MUSIC -->
     <section id="music">
-      <div class="clear"></div>
       <h2>MUSIC</h2>
       <div class="grid">
         <article class="bandcamp">
@@ -116,7 +121,6 @@
     </section>
     <!-- SHOWS -->
     <section id="tour">
-      <div class="clear-white"></div>
       <h2>SHOWS</h2>
       <article class="songkick">
         <!-- SONGKICK WIDGET HERE-->
@@ -127,7 +131,6 @@
   </main>
   <!-- FOOTER / CONTACT -->
   <footer id="contact">
-    <div class="clear"></div>
     <section class="contact">
       <h2>CONTACT</h2>
       <h3>BOOKING / MANAGEMENT</h3>
@@ -138,14 +141,15 @@
       <a target="_blank" href="http://www.rejuvenationrecords.com/">Rejuvenation Records</a>
       <br>
       <a target="_blank" href="https://kerviniourecordz.bandcamp.com">Kerviniou Recordz</a>
-      <br>
+      <br><br>
       <h3>PRO CONTENT</h3>
-      <a href="" download="pro/Unspkble_Press_Fr_20220106_150dpi.pdf">Press Kit</a>
-      <br>
-      <a href="" download="pro/Unspkble_Rider_v2_211018.pdf">Rider / Patchlist</a>
-      <br>
+      <div class="pro">
+        <a href="" download="pro/Unspkble_Press_Fr_20220106_150dpi.pdf">PRESS KIT <img src="img/ico_fr.png" alt=""></a>
+        <a href="" download="pro/Unspkble_Press_Fr_20220106_150dpi.pdf">PRESS KIT <img src="img/ico_eng.png" alt=""></a>
+        <a href="" download="pro/Unspkble_Rider_v2_211018.pdf">TECH RIDER</a>
+      </div>
     </section>
-    <!-- SOCIAL -->
+    <!-- SOCIAL FOOTER -->
     <section>
       <ul>
         <li><a target="_blank" href="https://www.facebook.com/unspkble/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">

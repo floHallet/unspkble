@@ -29,7 +29,8 @@ $('a[href*="#"]').click(function(event) {
     });
   });
 
-/* check if user scroll
+/* check if user scroll and show/hide
+nav-bar and icons (menu and arrow)
 ------------------------------------*/
 $(document).scroll(function(){
   // get position of the page
