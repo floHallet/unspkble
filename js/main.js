@@ -33,9 +33,11 @@ $('a[href*="#"]').click(function(event) {
 nav-bar and icons (menu and arrow)
 ------------------------------------*/
 $(document).scroll(function(){
-  // get position of the page
+  // get position of the bio section
+  const posBio = $('#bio').offset().top;
+  // get position on the page
   const pos = $(document).scrollTop();
-  if (pos <= 320) {
+  if (pos < posBio) {
     $('nav').slideDown(500);
     $('.menu').slideUp(250);
     $('.arrow').slideUp(500);
