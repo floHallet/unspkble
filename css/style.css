@@ -9,7 +9,7 @@ html {
   background-color: #040408;
   font-family: 'Bahnschrift fallback', sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   color: #FFFFFF;
   text-align: center;
 }
@@ -31,6 +31,7 @@ h2 {
 }
 
 h3 {
+  /*font-size: 1.2rem;*/
   font-weight: 500;
   color: #9A9A9A;
   margin-bottom: 0.25rem;
@@ -337,7 +338,7 @@ visit: https://www.benmarshall.me/responsive-iframes/
 }
 
 .stream a {
-  width: 190px ;
+  width: 190px;
   color: #FFFFFF;
   padding: 1rem 1rem;
   margin: 0.5rem 0.5rem 0 0;
@@ -429,9 +430,9 @@ footer {
 
 /* 5. MEDIA QUERIES */
 @media only screen and (min-width: 2000px) {
-  html {
+  /*html {
     font-size: 20px;
-  } 
+  }*/
   .stream {
     width: 700px;
   }
@@ -456,9 +457,9 @@ footer {
 }
 
 @media only screen and (max-width: 1024px) {
-  html {
+  /*html {
     font-size: 17px;
-  } 
+  }*/
   .logo figure {
     width: 55%;
   }
@@ -468,9 +469,9 @@ footer {
 }
 
 @media only screen and (max-width: 900px) { 
-  html {
+  /*html {
     font-size: 16px;
-  }
+  }*/
   .logo figure {
     width: 60%;
   }
