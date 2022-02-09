@@ -1,15 +1,16 @@
 /* 1.GENERAL STYLE */
 @font-face {
-  font-family: 'Bahnschrift fallback';
-  src: url('bahnschrift.ttf');
+  font-family: Bahnschrift;
+  src: url('bahnschrift.ttf') format('truetype');
+  font-weight: 400 700;
 }
 
 html {
   box-sizing: border-box;
   background-color: #040408;
-  font-family: 'Bahnschrift fallback', sans-serif;
-  font-weight: 400;
+  font-family: Bahnschrift, sans-serif;
   font-size: 16px;
+  font-weight: normal;
   color: #FFFFFF;
   text-align: center;
 }
@@ -26,12 +27,12 @@ h1 {
 
 h2 {
   font-size: 2.25rem;
-  font-weight: 600;
+  font-weight: 700;
   margin: 1rem 0;
 }
 
 h3 {
-  /*font-size: 1.2rem;*/
+  font-size: 1.4rem;
   font-weight: 500;
   color: #9A9A9A;
   margin-bottom: 0.25rem;
@@ -246,16 +247,16 @@ visit: https://www.benmarshall.me/responsive-iframes/
 
 /* cycler */
 #cycler {
-  position:relative;
+  position: relative;
   overflow: hidden;
   padding-top: 66%;
   margin: 0;
 }
 #cycler img {
-  position:absolute;
+  position: absolute;
   top: 0;
   left: 0;
-  z-index:1;
+  z-index: 1;
   width: 100%;
   margin: 0;
 }
@@ -271,7 +272,7 @@ p.justify {
 
 @media only screen and (max-width: 480px) {
   p.justify {
-    text-align: justify;
+    /*text-align: justify;*/
     margin: 1rem;
   }
 }
@@ -344,7 +345,7 @@ visit: https://www.benmarshall.me/responsive-iframes/
   margin: 0.5rem 0.5rem 0 0;
   background-color: #32465F;
   text-decoration: none;
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
   transition: all 250ms ease-out;
 }
 
