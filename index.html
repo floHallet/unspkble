@@ -22,11 +22,16 @@
   <!--<meta name="theme-color" content="#fafafa">-->
 </head>
 <body>
+  <div id="preloader"> 
+    <div id="loader"></div>
+  </div>
   <!-- HEADER -->
   <header id="top">
     <!-- MAIN TITLE HIDDEN -->
     <h1>UNSPKBLE WEBSITE</h1>
     <!-- NAV BAR -->
+    <!-- MENU ICON -->
+    <div class="nav-mobile rotate-in-center"><div id="nav-toggle"><span></span></div></div>
     <nav class="slide-in-top">
       <div>
         <a href="#bio">About</a>
@@ -47,17 +52,14 @@
           </svg></a></li>
       </ul>    
     </nav>
+    
     <!-- LOGO -->
     <section class="logo">
       <figure>
-        <img class="slide-in-top" src="img/logo_website_1024.png" alt="Logo">        
+        <img loading="lazy" src="img/logo_website_1024.png" alt="Logo">        
       </figure>
     </section>
   </header>
-  <!-- MENU ICON -->
-  <div class="menu rotate-in-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-  </svg></div>
   <!-- ARROW ICON (GO TO TOP) -->
   <a class="arrow rotate-in-center" href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
     <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
@@ -66,27 +68,27 @@
   <main>
     <!-- VIDEO -->
     <section id="video">
-      <div class="container slide-in-bottom">
+      <div class="container animation_elements">
         <article class="youtube">
           <!-- YOUTUBE VIDEO HERE-->
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/rsJChoJVDns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe id="test" width="560" height="315" src="https://www.youtube.com/embed/rsJChoJVDns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <!-- END YOUTUBE VIDEO-->
         </article>
       </div>
       <!-- VIDEO BUTTON -->
-      <a class="video-button" target="_blank" href="https://www.youtube.com/watch?v=fL4zeZ-z04Q&list=PLF8-dqxAQQCHtBPsrZ4RmtnHrBNwY120j">STREAM 'LIVE AT THE BLACK SHEEP'</a>
+      <a  class="video-button animation_elements" target="_blank" href="https://www.youtube.com/watch?v=fL4zeZ-z04Q&list=PLF8-dqxAQQCHtBPsrZ4RmtnHrBNwY120j">STREAM 'LIVE AT THE BLACK SHEEP'</a>
     </section>
     <!-- ABOUT -->
     <section id="bio">
-      <h2>ABOUT</h2>
-      <article>
+      <h2 class="animation_elements">ABOUT</h2>
+      <article class="animation_elements">
         <!-- DIAPORAMA -->
-        <figure id="cycler">
+        <figure id="cycler" class="animation_elements">
           <img class="active" src="img/unspk.jpg" alt="">
-          <img src="img/diapo01.jpg" alt="">
-          <img src="img/diapo02.jpg" alt="">
-          <img src="img/diapo04.jpg" alt="">
-          <img src="img/diapo05.jpg" alt="">
+          <img src="img/diapo01.jpg" alt="" loading="lazy">
+          <img src="img/diapo02.jpg" alt="" loading="lazy">
+          <img src="img/diapo04.jpg" alt="" loading="lazy">
+          <img src="img/diapo05.jpg" alt="" loading="lazy">
           <!-- ADD IMAGES HERE IF NEEDED 
           example: 
           <img src="img/name.jpg" alt=""> 
@@ -102,8 +104,8 @@
       </article>   
     </section>
     <!-- MUSIC -->
-    <section id="music">
-      <h2>MUSIC</h2>
+    <section id="music" class="animation_elements">
+      <h2 >MUSIC</h2>
       <div class="grid">
         <article class="bandcamp">
           <div>
@@ -127,9 +129,9 @@
       </div>
     </section>
     <!-- SHOWS -->
-    <section id="tour">
-      <h2>SHOWS</h2>
-      <article class="songkick">
+    <section id="tour" >
+      <h2 class="animation_elements">SHOWS</h2>
+      <article class="songkick animation_elements">
         <!-- SONGKICK WIDGET HERE-->
         <a href="https://www.songkick.com/artists/10183387" class="songkick-widget" data-theme="light" data-other-artists="on" data-track-button="on" data-detect-style="true" data-background-color="transparent" data-locale="en">Unspkble tour dates</a>
         <script src="//widget.songkick.com/10183387/widget.js"></script>
@@ -139,7 +141,7 @@
   </main>
   <!-- FOOTER / CONTACT -->
   <footer id="contact">
-    <section class="contact">
+    <section class="contact animation_elements">
       <h2>CONTACT</h2>
       <h3>BOOKING / MANAGEMENT</h3>
       <p class="no-margin">Greg Reju</p>
